@@ -1,0 +1,13 @@
+import { Platform } from "react-native";
+
+import colors from "./colors";
+import { useFonts } from "expo-font";
+
+export default {
+  colors,
+  text: {
+    color: colors.dark,
+    fontSize: 15,
+    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+  },
+};
